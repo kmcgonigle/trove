@@ -155,6 +155,17 @@ header img {
 	width: 235px;
 }
 
+.products {
+	display: flex;
+	justify-content: space-between;	
+	position: relative;
+	margin: 2rem auto;
+	max-width: 630px;
+	padding-left: 50px;
+	width: 100%;
+	z-index: 2;
+}
+
 a {
 	color: #231f20;
 }
@@ -167,6 +178,7 @@ p {
 	font-size: 1.6rem;
 	letter-spacing: 0.075rem;
 	line-height: 1.3em;
+	margin: 1.6rem 0;
 	padding: 1rem 0 1rem 8.2rem;
 	position: relative;
 	z-index: 2;
@@ -268,15 +280,143 @@ img {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 880px) {
+	.container {
+		margin: 0;
+		padding: 55px 0;
+	}
+    .container > * {
+		margin-left: 0;
+	}
+	
+	header {
+		padding: 0 34px;
+	}
+	
+	header h1 {
+		padding-left: 13%;	
+	}
+	
+	article {
+		padding-left: 10rem;
+	}
+	
+	p {
+		padding: 1rem 2rem 1rem 0;
+	}
+	
+	.grey-bg {
+		left: 0;
+		width: 105px;
+	}
+	
+	.products {
+		display: table;
+		margin: 0;
+		max-width: 94%;
+		padding-left: 0;
+	}
+	
+	.products img {
+		display: inline;
+		position: relative;
+		padding-left: 4%;	
+		max-width: 100%;
+		width: 30%;
+	}
+	
+	.products img:first-child {
+		padding-left: 0;
+	}
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media only screen and (max-width: 660px) {
+	.sans-serif {
+		font-size: 0.85rem;
+	}
+	
+	header {
+		margin-bottom: -10px;
+	}
+	
+	header img {
+		height: 126px;
+		width: 188px;
+	}
+	
+	header h1 {
+		padding-left: 10%;	
+		padding-top: 38px;
+	}
+	
+	article {
+		padding-left: 8.5rem;
+	}
+	
+	p {
+		font-size: 1.5rem;
+		margin: 0.8rem 0;
+		padding: 0.5rem 3rem 1rem 0;
+	}
+	
+	.grey-bg {
+		width: 90px;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.products {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;	
+		max-width: 84%;
+	}
+	
+	.products img {
+		display: block;
+		width: 187px;
+		height: auto;
+		margin: 0 auto 2rem;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.sans-serif {
+    	font-size: 0.75rem;
+	}
+
+	.container {
+		padding: 0;
+	}
+	
+	header {
+		background-color: #cfd1d2;
+		padding: 40px 2rem 20px;
+	}
+	
+	header img {
+		width: 80%;
+		height: auto;
+		min-width: 80px;
+	}
+	
+	article {
+		padding: 1rem 10%;
+	}
+	
+	p {
+		padding: 0.5rem 0 1rem 0;
+	}
+	
+	.grey-bg {
+		display: none;
+	}
+	
+	.products {
+		margin: 0 auto;
+		padding: 0;
+	}
 }
 
 /* ==========================================================================

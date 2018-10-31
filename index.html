@@ -18,14 +18,22 @@
 <body>
 	<div class="container">
     	<header>
-        	<img src="img/logo.png" alt="Trove Design Shop">
+        	<img src="img/logo.png" alt="Trove Design Shop"/>
             <h1 class="sans-serif"><span class="hidden">Trove Design Shop: </span>Beautiful Treasures</h1>
             <div class="grey-bg"></div>
         </header>
         
-        <p>a pop-up shop featuring art, ceramics, books, jewelry, decor, greeting cards, and more&mdash;located in downtown Birmingham, Alabama&rsquo;s Railroad Park for 6 weekends starting November 17th, 2018.</p> 
-        
-        <p class="sans-serif small">Check our our <a href="https://www.instagram.com/trovebham/">Instagram</a> or <a href="http://facebook.com/trovebham/">Facebook</a> for more info.</p>
+        <article>
+            <p>a pop-up shop featuring art, ceramics, books, jewelry, decor, greeting cards, and more&mdash;located in downtown Birmingham, Alabama&rsquo;s Railroad Park for 6 weekends starting November 17th, 2018.</p> 
+            
+            <p class="sans-serif small">Check our our <a href="https://www.instagram.com/trovebham/">Instagram</a> or <a href="http://facebook.com/trovebham/">Facebook</a> for more info.</p>
+            
+            <div class="products">
+                <img src="img/books.jpg" alt="Design and at books in a stack: Creative Living London, Nib + Ink, A Year Between Friends, Typograph Sketchbooks, Salt Fat Acid Heat, and Living with Pattern."/>
+                <img src="img/art.jpg" alt="An art print of foliage from Sarah Golden Art."/>
+                <img src="img/ceramics.jpg" alt="An array of ceramics from Civil Stoneware Studio, including bowls, plates and utensils."/>
+            </div>
+    	</article>
     </div>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -36,6 +44,33 @@
 		gtag('js', new Date());
 	
 		gtag('config', 'UA-128420670-1');
+	</script>
+    
+    <script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous">
+    </script>
+    <script>
+		// If we have a short page, the grey column may not extend to the bottom of the page.
+		$(document).ready(function(){
+			// Check the page content height against the window height
+			var greyCol = $('.grey-bg');
+			function colSetHeight(windowHeight) {
+				windowHeight = Math.round(windowHeight);
+				$(greyCol).css('height', windowHeight);
+			}
+	
+			if ($(window).height() > $('body').height()){
+				colSetHeight($(window).height());
+			}
+			
+			$(window).on('resize', function(){
+				if ($(window).height() > $('body').height()){
+					colSetHeight($(window).height());
+				}
+			});
+		});
 	</script>
 </body>
 
