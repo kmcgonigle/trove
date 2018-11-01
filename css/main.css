@@ -174,6 +174,11 @@ a:hover {
 	color: #0b6592;
 }
 
+a img {
+	border: none;
+	outline: none;
+}
+
 p {
 	font-size: 1.6rem;
 	letter-spacing: 0.075rem;
@@ -316,16 +321,19 @@ img {
 		max-width: 94%;
 		padding-left: 0;
 	}
-	
-	.products img {
-		display: inline;
+
+	.products a {
+		display: inline-block;
+		padding-left: 4%;
 		position: relative;
-		padding-left: 4%;	
-		max-width: 100%;
 		width: 30%;
 	}
 	
-	.products img:first-child {
+	.products img {
+		max-width: 100%;
+	}
+	
+	.products a:first-child {
 		padding-left: 0;
 	}
 }
@@ -372,7 +380,7 @@ img {
 		max-width: 84%;
 	}
 	
-	.products img {
+	.products a {
 		display: block;
 		width: 187px;
 		height: auto;
