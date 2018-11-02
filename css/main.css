@@ -161,9 +161,75 @@ header img {
 	position: relative;
 	margin: 2rem auto;
 	max-width: 630px;
-	padding-left: 50px;
+	padding-left: 4.5rem;
 	width: 100%;
 	z-index: 2;
+}
+
+.email-signup {
+	align-items: center;
+	display: flex;
+	padding-left: 8.2rem;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	max-width: 630px;
+}
+
+.email-signup > * {
+	margin: 0;
+	padding: 0;
+}
+
+.email-signup > p {
+	padding-right: 3%;
+	width: 33%;
+}
+
+.form {
+	width: 67%;
+}
+
+.form label {
+	display: none;
+}
+
+form {
+	display: flex;
+}
+
+input[type=submit] {
+	background-color: #858585;
+	border: none;
+	color: #f3f0eb;
+	cursor: pointer;
+	outline: none;
+	padding: 18px 10px;
+	margin: 0;
+	transition: all 100ms linear;
+	width: 20%;
+	display: block;
+	margin-left: 5px;
+	position: relative;
+	min-width: 135px;
+}
+
+input[type=submit]:hover {
+	background-color: #464646;
+	transition: all 100ms linear;
+}
+
+input[type=text], input[type=email] {
+	border: 1px solid transparent;
+	height: 40px;
+	padding: 5px 10px;
+	width: 80%;
+	display: block;
+	position: relative;
+}
+
+input:focus {
+	border: 1px solid #cfd1d2;
 }
 
 a {
@@ -336,6 +402,21 @@ img {
 	.products a:first-child {
 		padding-left: 0;
 	}
+
+	.email-signup {
+		flex-wrap: wrap;
+		padding: 2rem 0 0 0;
+		max-width: 94%;
+	}
+
+	.email-signup > p {
+		padding-bottom: 1rem;
+		width: 100%;
+	}
+
+	.form {
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 660px) {
@@ -387,6 +468,23 @@ img {
 		margin: 0 auto 2rem;
 		padding: 0;
 	}
+
+	.email-signup {
+		max-width: 88%;
+	}
+
+	form {
+		flex-wrap: wrap;
+	}
+
+	input[type="text"], input[type="email"] {
+		width: 100%;
+	}
+
+	input[type=submit] {
+		margin: 1rem auto 0;
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -395,7 +493,7 @@ img {
 	}
 
 	.container {
-		padding: 0;
+		padding: 0 0 40px;
 	}
 	
 	header {
@@ -424,6 +522,10 @@ img {
 	.products {
 		margin: 0 auto;
 		padding: 0;
+	}
+
+	.email-signup {
+		max-width: 100%;
 	}
 }
 
