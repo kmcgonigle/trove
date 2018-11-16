@@ -236,6 +236,10 @@ input:focus {
 	margin-top: 3rem;
 }
 
+.img-block.location img {
+	max-height: 755px;
+}
+
 a {
 	color: #231f20;
 }
@@ -265,6 +269,7 @@ p {
 }
 
 img {
+	heigh: auto;
 	max-width: 100%;
 }
 
