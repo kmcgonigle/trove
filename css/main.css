@@ -155,7 +155,7 @@ header img {
 	width: 235px;
 }
 
-.products {
+.img-block {
 	display: flex;
 	justify-content: space-between;	
 	position: relative;
@@ -230,6 +230,10 @@ input[type=text], input[type=email] {
 
 input:focus {
 	border: 1px solid #cfd1d2;
+}
+
+.img-block.location {
+	margin-top: 3rem;
 }
 
 a {
@@ -381,25 +385,25 @@ img {
 		width: 105px;
 	}
 	
-	.products {
+	.img-block {
 		display: table;
 		margin: 0;
 		max-width: 94%;
 		padding-left: 0;
 	}
 
-	.products a {
+	.img-block a {
 		display: inline-block;
 		padding-left: 4%;
 		position: relative;
 		width: 30%;
 	}
 	
-	.products img {
+	.img-block img {
 		max-width: 100%;
 	}
 	
-	.products a:first-child {
+	.img-block a:first-child {
 		padding-left: 0;
 	}
 
@@ -454,14 +458,14 @@ img {
 }
 
 @media only screen and (max-width: 560px) {
-	.products {
+	.img-block {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;	
 		max-width: 84%;
 	}
 	
-	.products a {
+	.img-block a {
 		display: block;
 		width: 187px;
 		height: auto;
@@ -469,7 +473,7 @@ img {
 		padding: 0;
 	}
 
-	.email-signup {
+	.email-signup, .img-block.location {
 		max-width: 88%;
 	}
 
@@ -519,12 +523,12 @@ img {
 		display: none;
 	}
 	
-	.products {
+	.img-block {
 		margin: 0 auto;
 		padding: 0;
 	}
 
-	.email-signup {
+	.email-signup, .img-block.location {
 		max-width: 100%;
 	}
 }
