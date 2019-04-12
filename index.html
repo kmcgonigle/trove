@@ -80,12 +80,12 @@
 			}
 	
 			if ($(window).height() > $('body').height()){
-				colSetHeight($(window).height());
+				colSetHeight($(document).height());
 			}
 			
 			$(window).on('resize', function(){
 				if ($(window).height() > $('body').height()){
-					colSetHeight($(window).height());
+					colSetHeight($(document).height());
 				}
 			});
 		});
