@@ -183,11 +183,11 @@ header img {
 
 .email-signup > p {
 	padding-right: 3%;
-	width: 33%;
+	width: 18%;
 }
 
 .form {
-	width: 67%;
+	width: 79%;
 }
 
 .form label {
@@ -204,7 +204,7 @@ input[type=submit] {
 	color: #f3f0eb;
 	cursor: pointer;
 	outline: none;
-	padding: 18px 10px;
+	padding: 10px;
 	margin: 0;
 	transition: all 100ms linear;
 	width: 20%;
@@ -258,7 +258,7 @@ p {
 	letter-spacing: 0.075rem;
 	line-height: 1.3em;
 	margin: 1.6rem 0;
-	padding: 1rem 0 1rem 8.2rem;
+	padding: 0 0 0 8.2rem;
 	position: relative;
 	z-index: 2;
 }
@@ -266,11 +266,20 @@ p {
 .small {
 	font-size: 0.8em;	
 	letter-spacing: 0.225rem;
+	line-height: 2.5;
 }
 
 img {
 	heigh: auto;
 	max-width: 100%;
+}
+
+.social-links {
+	float: left;
+	display: block;
+	margin-left: -210px;
+	margin-top: -60px;
+	text-align: right;
 }
 
 
@@ -360,6 +369,15 @@ img {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and (max-width: 1100px) {
+	.social-links {
+		float: none;
+		text-align: left;
+		margin: initial;
+		margin-top: 1.8rem;
+	}
+}
+
 @media only screen and (max-width: 880px) {
 	.container {
 		margin: 0;
@@ -382,7 +400,7 @@ img {
 	}
 	
 	p {
-		padding: 1rem 2rem 1rem 0;
+		padding: 0 2rem 0 0;
 	}
 	
 	.grey-bg {
@@ -431,6 +449,7 @@ img {
 @media only screen and (max-width: 660px) {
 	.sans-serif {
 		font-size: 0.85rem;
+		line-height: 1.6;
 	}
 	
 	header {
@@ -493,6 +512,10 @@ img {
 	input[type=submit] {
 		margin: 1rem auto 0;
 		width: 100%;
+	}
+
+	.social-links {
+		text-align: center;
 	}
 }
 
