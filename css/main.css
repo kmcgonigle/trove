@@ -282,6 +282,10 @@ img {
 	text-align: right;
 }
 
+p.sans-serif.small {
+    margin: 0.5rem 0;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -410,7 +414,7 @@ img {
 	
 	.img-block {
 		display: table;
-		margin: 0;
+		margin: 1.4rem 0 0;
 		max-width: 94%;
 		padding-left: 0;
 	}
