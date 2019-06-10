@@ -449,7 +449,9 @@ img {
 @media only screen and (max-width: 660px) {
 	.sans-serif {
 		font-size: 0.85rem;
-		line-height: 1.6;
+		line-height: 2.2;
+		margin: 0;
+		padding: 0.5rem 0;
 	}
 	
 	header {
@@ -487,6 +489,7 @@ img {
 		flex-direction: column;
 		flex-wrap: wrap;	
 		max-width: 84%;
+		margin-top: 1.4rem;
 	}
 	
 	.img-block a {
@@ -495,6 +498,10 @@ img {
 		height: auto;
 		margin: 0 auto 2rem;
 		padding: 0;
+	}
+	
+	.img-block a:last-child {
+		margin-bottom: 0;
 	}
 
 	.email-signup, .img-block.location {
@@ -515,7 +522,9 @@ img {
 	}
 
 	.social-links {
+		max-width: 88%;
 		text-align: center;
+		margin-top: 0.7rem;
 	}
 }
 
