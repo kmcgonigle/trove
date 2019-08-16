@@ -274,16 +274,16 @@ img {
 	max-width: 100%;
 }
 
-.social-links {
+p.sans-serif.small {
+    margin: 0.5rem 0;
+}
+
+p.social-links.sans-serif.small {
 	float: left;
 	display: block;
 	margin-left: -210px;
 	margin-top: -60px;
 	text-align: right;
-}
-
-p.sans-serif.small {
-    margin: 0.5rem 0;
 }
 
 
@@ -374,7 +374,7 @@ p.sans-serif.small {
    ========================================================================== */
 
 @media only screen and (max-width: 1100px) {
-	.social-links {
+	p.social-links.sans-serif.small  {
 		float: none;
 		text-align: left;
 		margin: initial;
@@ -525,7 +525,7 @@ p.sans-serif.small {
 		width: 100%;
 	}
 
-	.social-links {
+	p.social-links.sans-serif.small  {
 		max-width: 88%;
 		text-align: center;
 		margin-top: 0.7rem;
