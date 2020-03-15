@@ -105,6 +105,19 @@ body {
 	font-weight: 500;
 }
 
+a {
+	color: #231f20;
+}
+
+a:hover {
+	color: #0b6592;
+}
+
+a img {
+	border: none;
+	outline: none;
+}
+
 .sans-serif {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
@@ -198,7 +211,7 @@ form {
 	display: flex;
 }
 
-input[type=submit] {
+a.button, input[type=submit] {
 	background-color: #858585;
 	border: none;
 	color: #f3f0eb;
@@ -212,11 +225,20 @@ input[type=submit] {
 	margin-left: 5px;
 	position: relative;
 	min-width: 135px;
+	text-decoration: none;
 }
 
-input[type=submit]:hover {
+a.button:hover, input[type=submit]:hover {
 	background-color: #464646;
 	transition: all 100ms linear;
+}
+
+a.button.small {
+	font-size: 1rem;
+	width: auto;
+	display: table;
+	padding: 0.8rem 1rem;
+	margin: 0;
 }
 
 input[type=text], input[type=email] {
@@ -238,19 +260,6 @@ input:focus {
 
 .img-block.location img {
 	max-height: 630px;
-}
-
-a {
-	color: #231f20;
-}
-
-a:hover {
-	color: #0b6592;
-}
-
-a img {
-	border: none;
-	outline: none;
 }
 
 p {
